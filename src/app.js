@@ -5,13 +5,16 @@ const express = require('express')
 const hbs = require('hbs')
 
 const chalk = require('chalk')
+
 const geocode = require('./utils/geocode')
+
 const forecast = require('./utils/forecast')
 
 
 
-
 const app = express()
+
+const port = process.env.PORT || 3000
 
 const publicPath = path.join(__dirname, '../public')
 
@@ -125,10 +128,10 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
 
   console.log(chalk.yellow('\n\n\nInitializing Server...'));
 
-  console.log("Server started correctly on port 3000");
+  console.log("Server started correctly on port " + port);
 
 })
