@@ -3,5 +3,7 @@
 
 A simple weather application
 
-View the site at:
-https://elpis-weather-tut.herokuapp.com/
+Live version is not available
+
+Start command is:
+`npm start`
