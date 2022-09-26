@@ -5,5 +5,4 @@ A simple weather application
 
 Live version is not available
 
-Start command is:
-`npm start`
+Start command is: `npm start`
